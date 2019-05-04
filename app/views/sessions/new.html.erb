@@ -1,0 +1,18 @@
+<%= form_for :session, url: login_path do |f| %>
+<div class="form-content_elemnet">
+    <div><%= f.label :email %>
+    </div><%=f.text_field :email %>
+</div>
+<div class="form-content_elemnet">
+    <div>
+        <%= f.label :password %>
+    </div>
+    <%=f.password_field :password%>
+</div>
+<div class="form-content_elemnet">
+    <div><%= f.label :password_confirmation %> </div><%=f.password_field :password_confirmation %>
+</div>
+
+
+<%=f.submit 'ログイン'%>
+<%end%>

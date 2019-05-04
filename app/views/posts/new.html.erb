@@ -1,0 +1,13 @@
+<%= form_for(@post, url: posts_path) do |p| %>
+<div class="post-form_element">
+    <div><%= p.label :title %></div>
+    <div><%=p.text_field :title%></div>
+</div>
+<div class="post-form_element">
+    <div><%= p.label :content %></div>
+    <div><%=p.text_area :content%></div>
+</div>
+<div class="post-form_element">
+    <%=p.submit%>
+</div>
+<% end %>
