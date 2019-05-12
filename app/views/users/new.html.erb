@@ -1,21 +1,19 @@
-<div class="signin-form">
-<%= form_for(@user, url: signin_path) do |user| %>
-<div class="signin-form_element">
-<div><%= user.label :email %></div>
-<div><%=user.text_field :email%></div>
-</div>
-<div class="signin-form_element">
-<div><%= user.label :password %></div>
-<div><%=user.password_field :password%></div>
-</div>
-<div class="signin-form_element">
-<div><%= user.label :password_confirmation %></div>
-<div><%=user.password_field :password_confirmation%></div>
-</div>
-<div class="signin-form_element">
-<%=user.submit "登録"%>
-</div>
-
-
-<% end %>
+<div class="signup-form">
+    <%= form_for(@user, url: signup_path) do |user| %>
+    <div class="signup-form_element">
+        <div><%= user.label :email %></div>
+        <div><%=user.text_field :email%></div>
+    </div>
+    <div class="signup-form_element">
+        <div><%= user.label :password %></div>
+        <div><%=user.password_field :password%></div>
+    </div>
+    <div class="signup-form_element">
+        <div><%= user.label :password_confirmation %></div>
+        <div><%=user.password_field :password_confirmation%></div>
+    </div>
+    <div class="signup-form_element">
+        <%=user.submit "登録"%>
+    </div>
+    <% end %>
 </div>
